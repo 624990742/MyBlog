@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>联系我们</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../css/base-style.css">
+      <!-- 文字图标 CSS -->
+      <link rel="stylesheet" href="../css/font-icon-style.css">
+
+  </head>
+  <body>
+  <!-- header -->
+  <header class="w3l-header">
+      <div class="container">
+        <div id="contactNavbar"></div>
+      </div>
+  </header>
+  <!-- //header -->
+<!-- contacts-5-grid -->
+<div class="w3l-contact-10 py-5" id="contact">
+    <div class="form-41-mian pt-lg-4 pt-md-3 pb-md-4">
+        <div class="container">
+            <div class="heading">
+                <h3 class="category-title mb-3">联系我们</h3>
+                <p class="mb-md-5 mb-4">如果您对我们的服务有任何疑问，请随时联系请使用下面的表格与我们联系。</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 form-inner-cont">
+                    <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                        <div class="form-grids">
+                            <div class="form-input">
+                                <input type="text" name="w3lName" id="w3lName" placeholder="输入您的姓名"
+                                    required="" />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="w3lSubject" id="w3lSubject" placeholder="请您描述您的问题"
+                                    required />
+                            </div>
+                            <div class="form-input">
+                                <input type="email" name="w3lSender" id="w3lSender" placeholder="输入您的电子邮件"
+                                    required />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="w3lPhone" id="w3lPhone" placeholder="输入您的电话号码"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="w3lMessage" id="w3lMessage" placeholder="请在这里输入您的留言"
+                                required=""></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-style btn-primary">提交</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-4 contacts-5-grid-main section-gap mt-lg-0 mt-5">
+                    <div class="contacts-5-grid">
+                        <h3 class="section-title-left mb-3">联系信息</h3>
+                        <div class="map-content-5">
+                            <section class="tab-content">
+                                <div class="contact-type">
+                                    <div class="address-grid mb-2">
+                                        <h6>电话联系：</h6>
+                                        <a href="tel:18800xxxx" class="link1">18800xxxx</a>
+                                    </div>
+                                    <div class="address-grid mb-2">
+                                        <h6>邮件地址：</h6>
+                                        <a href="mailto:jc624990742@163.com" class="link1">jc624990742@163.com</a>
+                                    </div>
+                                    <div class="address-grid mb-2">
+                                        <h6>地址：</h6>
+                                        <p>北京晨仔大学</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //contacts-5-grid -->
+    </div>
+</div>
+<section class="app-footer">
+    <div id="footer"></div>
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+</section>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/navigationHeader.js"></script>
+  <script>
+      // 导航项的数据
+      const contactNavItems = [
+          { title: '主页', href: 'index.html', isActive: false },
+          { title: '热门', href: 'hot.html', isActive: false },
+          { title: '推荐', href: 'fashion.html', isActive: false },
+          { title: '发现', href: 'find.html', isActive: false },
+          { title: '排行', href: 'hotRank.html', isActive: false },
+          { title: '联系我们', href: 'contact.html', isActive: true }
+      ];
+      // 生成导航栏
+      const contactNavigationHeader = generateNavigationHeader(contactNavItems,'fa fa-phone');
+      // 将导航栏添加到页面中的指定容器
+      const contactNavbarElement = document.getElementById('contactNavbar');
+      contactNavbarElement.appendChild(contactNavigationHeader);
+  </script>
+  <script src="../js/theme-change.js"></script>
+  <script src="../js/owl.carousel.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/pageFooter.js"></script>
+
+</body>
+
+</html>

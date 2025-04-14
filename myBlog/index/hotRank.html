@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>热门排行</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base-style.css">
+    <link rel="stylesheet" href="../css/font-icon-style.css">
+</head>
+<body>
+<!-- header -->
+<header class="w3l-header">
+  <div class="container">
+      <div id="hotRankNavbar"></div>
+  </div>
+</header>
+<!-- //header -->
+
+<!-- 第一排item-->
+<section class="w3l-homeblock1 py-sm-1 py-5">
+    <div class="container py-md-3">
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="index.html">
+                    <div class="area-box">
+                        <span class="fa fa-home"></span>
+                        <h4 class="title-head">主页</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="fashion.html">
+                    <div class="area-box">
+                        <span class="fa fa-female"></span>
+                        <h4 class="title-head">推荐</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="find.html">
+                    <div class="area-box">
+                        <span class="fa fa-search"></span>
+                        <h4 class="title-head">发现</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="hot.html">
+                    <div class="area-box">
+                        <span class="fa fa-bath"></span>
+                        <h4 class="title-head">热门</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //第一排item-->
+
+<div class="w3l-homeblock3 py-5">
+  <div class="container py-lg-5 py-md-4">
+    <h3 class="section-title-left mb-4"> 本月最佳排行</h3>
+    <div class="row top-pics">
+      <div class="col-lg-4 col-md-6">
+        <div class="top-pic1">
+          <div class="card-body blog-details">
+            <a href="articleList.html" class="blog-desc">美丽从这里开始
+            </a>
+            <div class="author align-items-center">
+              <img src="../images/a1.jpg" class="img-fluid rounded-circle" />
+              <ul class="blog-meta">
+                <li>
+                  <a>晨仔出品</a>
+                </li>
+                <li class="meta-item blog-lesson">
+                  <span class="meta-value"> 2023年5月1日 </span>. <span
+                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+        <div class="top-pic2">
+          <div class="card-body blog-details">
+            <a href="articleList.html" class="blog-desc">健康的食物有哪些
+            </a>
+            <div class="author align-items-center">
+              <img src="../images/a2.jpg" class="img-fluid rounded-circle" />
+              <ul class="blog-meta">
+                <li>
+                  <a>晨仔出品</a>
+                </li>
+                <li class="meta-item blog-lesson">
+                  <span class="meta-value"> 2023年5月10日 </span>. <span
+                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+        <div class="top-pic3">
+          <div class="card-body blog-details">
+            <a href="articleList.html" class="blog-desc"> 使用天然成分烘焙的食物，它就是最健康的吗？
+            </a>
+            <div class="author align-items-center">
+              <img src="../images/a3.jpg" class="img-fluid rounded-circle" />
+              <ul class="blog-meta">
+                <li>
+                  <a>晨仔出品</a>
+                </li>
+                <li class="meta-item blog-lesson">
+                  <span class="meta-value"> 2023年5月20 </span>. <span
+                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部footer-->
+<section class="app-footer">
+    <div id="footer"></div>
+</section>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/navigationHeader.js"></script>
+<script>
+    // 导航项的数据
+    const findnNavItems = [
+        { title: '排行', href: 'hotRank.html', isActive: true },
+    ];
+    // 生成导航栏
+    const hotRankNavigationHeader = generateNavigationHeader(findnNavItems,'fa fa-trophy');
+    // 将导航栏添加到页面中的指定容器
+    const hotRankNavbarElement = document.getElementById('hotRankNavbar');
+    hotRankNavbarElement.appendChild(hotRankNavigationHeader);
+</script>
+
+<script src="../js/theme-change.js"></script>
+<script src="../js/owl.carousel.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/pageFooter.js"></script>
+</body>
+
+</html>

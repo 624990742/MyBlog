@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="../css/base-style.css">
+    <link rel="stylesheet" href="../css/font-icon-style.css">
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .contentView {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #5a67d8;
+            margin-bottom: 30px;
+            animation: bounce-in-fwd 1s ease-out both;
+        }
+
+        p {
+            font-size: 24px;
+            color: #5a67d8;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            margin-bottom: 40px;
+            animation: scale-in-center 1s ease-out both;
+        }
+
+        .image-container::before {
+            content: "404";
+            display: block;
+            font-size: 200px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+
+        @keyframes bounce-in-fwd {
+            0% {
+                opacity: 0;
+                transform: scale(0.1) translateZ(0);
+            }
+            60% {
+                opacity: 1;
+                transform: scale(1.2) translateZ(0);
+            }
+            100% {
+                transform: scale(1) translateZ(0);
+            }
+        }
+
+        @keyframes scale-in-center {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contentView">
+    <div class="image-container"></div>
+    <h1>哎呀！找不到页面</h1>
+    <p>很抱歉，找不到您请求的页面!</p>
+    <a class="btn btn-style btn-primary" href="index.html">返回首页</a>
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

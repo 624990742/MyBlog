@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>热门</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base-style.css">
+    <link rel="stylesheet" href="../css/font-icon-style.css">
+</head>
+<body>
+<!-- header -->
+<header class="w3l-header">
+    <div class="container">
+        <div id="hotNavbar"></div>
+    </div>
+</header>
+
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="section-title-left mb-4"> 优秀作品展示 </h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 item">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="articleList.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                         src="../images/image1.jpg" >
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">微笑</span>
+                                <a href="articleList.html" class="blog-desc">你看他笑的多开心！
+                                </a>
+                                <p>微笑很有力量的，今天你微笑了吗？</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="../images/a1.jpg" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="articleList.html">码农晨仔出品</a>
+                                        </li>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> 2023年5月1日 </span>. <span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-md-0 mt-sm-5 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="articleList.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                         src="../images/image2.jpg" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">烦恼</span>
+                                <a href="articleList.html" class="blog-desc">每天都会有烦恼
+                                </a>
+                                <p>解决烦恼的最好方法就是让自己忙碌起来</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="../images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a >码农晨仔出品</a>
+                                        </li>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> 2023年3月24日 </span>. <span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 left-right bg-clr-white p-3">
+                    <h3 class="section-title-left align-self pl-2 mb-sm-0 mb-3">联系我们</h3>
+                    <a class="btn btn-style btn-primary" href="contact.html">点击跳转</a>
+                </div>
+            </div>
+            <div class="col-lg-4 trending mt-lg-0 mt-5">
+                <div class="topics">
+                    <h3 class="section-title-left mb-4"> 快速到达</h3>
+                    <a href="index.html" class="topics-list">
+                        <div class="list1">
+                            <span class="fa fa-home"></span>
+                            <h4>主页</h4>
+                        </div>
+                    </a>
+                    <a href="fashion.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-female"></span>
+                            <h4>推荐</h4>
+                        </div>
+                    </a>
+                    <a href="find.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-search"></span>
+                            <h4>发现</h4>
+                        </div>
+                    </a>
+                    <a href="hotRank.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-pie-chart"></span>
+                            <h4>排行</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="sponsers mt-5">
+                    <h3 class="section-title-left mb-4">每日一图</h3>
+                    <a href="articleDetail.html"><img src="../images/ad.jpg" class="img-fluid radius-image-full" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<section class="app-footer">
+    <div id="footer"></div>
+</section>
+<!-- //footer -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/navigationHeader.js"></script>
+<script>
+    // 导航项的数据
+    const hotNavItems = [
+        { title: '热门', href: 'hot.html', isActive: true },
+    ];
+    // 生成导航栏
+    const hotNavigationHeader = generateNavigationHeader(hotNavItems,'fa fa-bath');
+    // 将导航栏添加到页面中的指定容器
+    const hotNavbarElement = document.getElementById('hotNavbar');
+    hotNavbarElement.appendChild(hotNavigationHeader);
+</script>
+<script src="../js/theme-change.js"></script>
+<script src="../js/owl.carousel.js"></script>
+<!--<script src="js/custom.js"></script>-->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/pageFooter.js"></script>
+</body>
+</html>
